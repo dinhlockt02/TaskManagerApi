@@ -30,22 +30,28 @@
                     "type": "object",
                     "properties": {
                       "_id": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "61e50e802f488296cd24f519"
                       },
                       "name": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "Task name"
                       },
                       "completed": {
-                        "type": "boolean"
+                        "type": "boolean",
+                        "default": false
                       },
                       "createdAt": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "2022-01-17T06:36:48.124Z"
                       },
                       "updatedAt": {
-                        "type": "string"
+                        "type": "string",
+                        "default": "2022-01-17T06:36:48.124Z"
                       },
                       "_v": {
-                        "type": "string"
+                        "type": "number",
+                        "default": 0
                       }
                     }
                   }
@@ -70,7 +76,8 @@
                   "name": {
                     "minLength": 5,
                     "maxLength": 20,
-                    "type": "string"
+                    "type": "string",
+                    "default": "Task Name"
                   }
                 }
               }
@@ -79,14 +86,15 @@
         },
         "responses": {
           "201": {
-            "description": "Create successful",
+            "description": "Create task successfully",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
                   "properties": {
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "default": "Create task successfully"
                     }
                   }
                 }
@@ -125,22 +133,28 @@
                   "type": "object",
                   "properties": {
                     "_id": {
-                      "type": "string"
+                      "type": "string",
+                      "default": "61e50e802f488296cd24f519"
                     },
                     "name": {
-                      "type": "string"
+                      "type": "string",
+                      "default": "Task name"
                     },
                     "completed": {
-                      "type": "boolean"
+                      "type": "boolean",
+                      "default": false
                     },
                     "createdAt": {
-                      "type": "string"
+                      "type": "string",
+                      "default": "2022-01-17T06:36:48.124Z"
                     },
                     "updatedAt": {
-                      "type": "string"
+                      "type": "string",
+                      "default": "2022-01-17T06:36:48.124Z"
                     },
                     "_v": {
-                      "type": "string"
+                      "type": "number",
+                      "default": 0
                     }
                   }
                 }
@@ -151,7 +165,7 @@
             "description": "Task not found"
           },
           "500": {
-            "description": "Interal server error"
+            "description": "Internal server error"
           }
         }
       },
@@ -176,10 +190,12 @@
                 "type": "object",
                 "properties": {
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "default": "Task Name"
                   },
                   "completed": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "default": true
                   }
                 }
               }
@@ -194,7 +210,8 @@
                   "type": "object",
                   "properties": {
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "default": "Successful"
                     }
                   }
                 }
@@ -230,7 +247,8 @@
                   "type": "object",
                   "properties": {
                     "message": {
-                      "type": "string"
+                      "type": "string",
+                      "default": "Successful"
                     }
                   }
                 }
